@@ -1,6 +1,40 @@
 body{
+    font-family: 'Unica One', cursive;
     margin: 0;
+    color: #000;
 }
+
+#menu{
+    width: 84%;
+    z-index: 12;
+    top: 25px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+
+    
+    
+}
+#menu img{
+    height: 140px;
+    left: 50%;
+    top: -25%;
+    position: absolute;
+    transform: translate(-50%);
+
+    
+}
+nav{
+    height: 93px;
+    width: 743px;
+    background-color: #f0579752;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 93px;
+    margin: auto;
+}
+
 #main{
     max-width: 3000px;
 
@@ -29,23 +63,82 @@ header  img {
 
     transform-origin: top;
     transform: scale(1.1);
+    /* display: none; */
 }
-h1{
+.centerImg{
+    width: 350px;
+
+    transform-origin: top;
+    position: relative;
+    margin: auto;
+    transform: scale(1.1);
+}
+.centerImg img{
+    display: none;
+}
+#centerBtn{
+
+    width: 236px;
+    height: 59px;
+    font-size: 24px;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: #DBC3EC;
+    color: #67249B;
+    border-radius: 59px;
+    transform: translate(-50%);
+    bottom: -300px;
+}
+#logo{
     color: #4F2356;
     left: 50%;
-    font-size: 128px;
     margin: 0;
     z-index: 10;
+    top: 77px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     position: absolute;
     transform: translate(-50%);
+}
+#logo h1{
+    font-family: 'Scope One', serif;
+    height: 140px;
+    font-size: 128px;
+    margin: 0;
+}
+#logo h3{
+    display: block;
+    width: 311px;
+    text-align: center;
+    font-size: 32px;
+    margin: 0;
+
+}
+h3 span{
+    font-size: 36px;
+    color: #8356A7;
 }
 #bars{
     width: 386px;
     height: 281px;
     left: 50%;
     z-index: 0;
+    opacity: 36%;
+    top: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: absolute;
     transform: translate(-50%);
-
-    
+}
+.bar{
+    width: 44px;
+    height: 200px;
+    background-color: #BA92C3;
+    border-radius: 44px;
 }
