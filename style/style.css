@@ -2,10 +2,12 @@ body{
     font-family: 'Unica One', cursive;
     margin: 0;
     color: #000;
+    overflow-x: hidden;
 }
 
+
 #menu{
-    width: 84%;
+    width: 100%;
     z-index: 12;
     top: 25px;
     position: absolute;
@@ -30,6 +32,7 @@ nav{
     background-color: #f0579752;
     display: flex;
     justify-content: center;
+    align-items: center;
     align-items: center; 
     border-radius: 93px;
     margin: auto;
@@ -37,15 +40,17 @@ nav{
 
 #main{
     max-width: 3000px;
-
+    margin-inline: auto;
     display: flex;
     justify-content: center;
-    margin-inline: auto;
+    flex-direction: column;
+    align-items: center;
 }
 header{
-    width: 100%;
-    margin-inline: 9%;
+    width: 91%;
+    height: 89vh;
     margin-top: 40px;
+    margin-inline: 9%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -141,4 +146,57 @@ h3 span{
     height: 200px;
     background-color: #BA92C3;
     border-radius: 44px;
+}
+#slider{
+    width: 1309px;
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+#slider img{
+    width: 111px;
+}
+.zab{
+    margin-inline: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 207px;
+    font-size: 28px;
+    height: min-content;
+    text-align: center;
+    cursor: pointer;
+}
+.zab p{
+    margin: 0;
+}
+#pointer{
+    width: 207px;
+    height: 10px;
+    background: #DCB1DD;
+    border-radius: 10px;
+    position: absolute;
+    transition: .1s;
+}
+#sliderContent{
+    width: calc(2064px + 100vw);
+    margin-left: calc(100vw + 1032px);
+    margin-top: 20px;
+    height: 521px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0s;
+}
+.slide{
+    width: 1032px;
+    height: 521px;
+    background: linear-gradient(255.7deg, rgba(202, 148, 235, 0.43) 0%, rgba(219, 118, 255, 0.41) 50%, rgba(191, 142, 206, 0.68) 100%);
+    font-size: 40px;
+}
+.clilked{
+    margin-left: calc(-100vw - 1032px) !important;
+    transition: .3s !important;
 }

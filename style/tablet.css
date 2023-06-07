@@ -1,0 +1,19 @@
+/* 762px */
+
+@media only screen and (max-width: 1200px) {
+    #logo h1{
+        font-size: 100px;
+        margin-top: calc(20px + 1vw);
+    }
+    #logo h3{
+        display: none;
+    }
+    #bars{
+        top: 40px;
+    }
+    .sideImg{
+        margin-top: 160px;
+        transform: scale(0.9);
+    }
+
+}

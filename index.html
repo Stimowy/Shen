@@ -7,10 +7,12 @@
     <title>Document</title>
     <script src="main.js" defer></script>
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/phone.css">
+    <link rel="stylesheet" href="style/tablet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Scope+One&family=Unica+One&display=swap" rel="stylesheet">
+
+    <script src="main.js"></script>
 </head>
 <body>
     <div id="menu">
@@ -38,14 +40,45 @@
             <div class="sideImg">
                 <img src="img/DSC_0607.JPG" style="clip-path: url(#clipImgL);" alt="Klientka na której jest wykonywany zabieg">
             </div>
-            <div class="centerImg">
+            <!-- <div class="centerImg">
                 <img src="img/DSC_0570.JPG" style="clip-path: url(#clipImgC);" alt="Właścicielka trzymaj wizytówkę salonu">
                 <div id="centerBtn">Zarezerwuj wizyte</div>
-            </div>
+            </div> -->
             <div class="sideImg">
                 <img src="img/DSC_0622.JPG" style="clip-path: url(#clipImgR);" alt="Klientka na której jest wykonywany zabieg">
             </div>
         </header>
+        <div id="slider">
+            <div class="zab">
+                <img src="img/lotion.png" alt="krem pielengnacyjny">
+                <p>Pielęgnacja organiczna</p>
+            </div>
+            <div class="zab">
+                <img src="img/cupping.png" alt="terapia bańkami">
+                <p>Terapia Bańkami</p>
+            </div>
+            <div class="zab">
+                <img src="img/makeover.png" alt="makijaż twarzy">
+                <p>Make up</p>
+            </div>
+            <div class="zab">
+                <img src="img/body-massage.png" alt="masaż pleców">
+                <p>Masaże</p>
+            </div>
+            <div class="zab">
+                <img src="img/acupuncture.png" alt="akupunktura">
+                <p>Akupunktura</p>
+            </div>
+            <div class="zab">
+                <img src="img/collagen.png" alt="pielengnacja twarzy">
+                <p>Pielengnacja okolic oczu</p>
+            </div>
+            <div id="pointer"></div>
+        </div>
+        <div id="sliderContent" class="">
+            <div class="slide"></div>
+            <div class="slide" style="background-color: red;"></div>
+        </div>
     </div>
     <svg>
         <defs>
